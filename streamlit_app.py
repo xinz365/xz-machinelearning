@@ -11,4 +11,4 @@ with st.expander('BLT Data'):
   df
   
   st.write('**X**')
-  X = df.drop('blt', axis=1)
+  X = df.drop("blt", axis=1)
