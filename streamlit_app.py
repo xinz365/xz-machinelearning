@@ -17,3 +17,7 @@ with st.expander('BLT Data'):
   st.write('**y**')
   y = df.blt
   y
+
+with st.expander('Data Visualiztion'):
+  st.scatter_chart(data=df, x='dispenserpressure_ecro', y='blt', color='dispensepatternclassselection_ecro')
+  
