@@ -33,5 +33,7 @@ with st.sidebar:
   st.write("The current Dispense Print Time is ", dispenseprinttime_ecro)
   dispenseprocessspeed_ecro = st.selectbox('Dispense Process Speed',('0.7','0.75','0.8'))
   st.write("The current Dispense Process Speed is ", dispenseprocessspeed_ecro)
-  dispensewaittime_ecro
-  dispenseheighttostrip_ecro
+  dispensewaittime_ecro = st.slider('Dispense Wait Time',50, 200, 100)
+  st.write("The current Dispense Wait Time is ", dispensewaittime_ecro)
+  dispenseheighttostrip_ecro = st.selectbox('Dispense Height to Strip',('120','130','140'))
+  st.write("The current Dispense Height to Strip is ", dispenseheighttostrip_ecro)
