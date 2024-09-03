@@ -65,7 +65,7 @@ with st.sidebar:
   st.write("The current Epoxy Coverage Bottom is ", pbiepoxycoverage_bottom)
 
 data = {'dispenserpressure_ecro', dispenserpressure_ecro,
-       'bondtimenothighforcearray_ecro', bondtimenothighforcearray_ecro,
+        'bondtimenothighforcearray_ecro', bondtimenothighforcearray_ecro,
         'dispensepatternclassselection_ecro', dispensepatternclassselection_ecro,
         'dispenseprinttime_ecro', dispenseprinttime_ecro,
         'dispenseprocessspeed_ecro', dispenseprocessspeed_ecro,
