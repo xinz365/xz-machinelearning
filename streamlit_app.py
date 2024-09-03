@@ -21,6 +21,5 @@ with st.expander('BLT Data'):
 with st.expander('Data Visualization'):
   st.scatter_chart(data=df, x='dispenserpressure_ecro', y='blt', color='dispensepatternclassselection_ecro')
 
-#Data Preparation
 with st.sidebar():
   st.header('Input Features')
