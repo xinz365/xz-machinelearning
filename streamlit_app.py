@@ -37,3 +37,33 @@ with st.sidebar:
   st.write("The current Dispense Wait Time is ", dispensewaittime_ecro)
   dispenseheighttostrip_ecro = st.selectbox('Dispense Height to Strip',('120','130','140'))
   st.write("The current Dispense Height to Strip is ", dispenseheighttostrip_ecro)
+  dvipostdispenseshapecheckdatainner = st.number_input('Post Dispenser Shape Check Inner')
+  st.write("The current Post Dispenser Shape Check Inner is ", dvipostdispenseshapecheckdatainner)
+  dvipostdispenseshapecheckdataouter = st.number_input('Post Dispenser Shape Check Outer')
+  st.write("The current Post Dispenser Shape Check Outer is ", dvipostdispenseshapecheckdataouter)
+  pbiepoxycoverage_left = st.number_input('Epoxy Coverage Left')
+  st.write("The current Epoxy Coverage Left is ", pbiepoxycoverage_left)
+  pbiepoxycoverage_top = st.number_input('Epoxy Coverage Top')
+  st.write("The current Epoxy Coverage Top is ", pbiepoxycoverage_top)
+  pbiepoxycoverage_right = st.number_input('Epoxy Coverage Right')
+  st.write("The current Epoxy Coverage Right is ", pbiepoxycoverage_right)
+  pbiepoxycoverage_bottom = st.number_input('Epoxy Coverage Bottom')
+  st.write("The current Epoxy Coverage Bottom is ", pbiepoxycoverage_bottom)
+  bondprocessbondztouchheight_ecro = st.number_input('Bond Z Touch Height')
+  st.write("The current Bond Z Touch Height is ", bondprocessbondztouchheight_ecro)
+
+data = {'dispenserpressure_ecro', dispenserpressure_ecro,
+       'bondtimenothighforcearray_ecro', bondtimenothighforcearray_ecro,
+        'dispensepatternclassselection_ecro', dispensepatternclassselection_ecro,
+        'dispenseprinttime_ecro', dispenseprinttime_ecro,
+        'dispenseprocessspeed_ecro', dispenseprocessspeed_ecro,
+        'dispensewaittime_ecro', dispensewaittime_ecro,
+        'dispenseheighttostrip_ecro', dispenseheighttostrip_ecro,
+        'dvipostdispenseshapecheckdatainner', dvipostdispenseshapecheckdatainner,
+        'dvipostdispenseshapecheckdataouter', dvipostdispenseshapecheckdataouter,
+        'pbiepoxycoverage_left', pbiepoxycoverage_left,
+        'pbiepoxycoverage_top', pbiepoxycoverage_top,
+        'pbiepoxycoverage_right', pbiepoxycoverage_right,
+        'pbiepoxycoverage_bottom', pbiepoxycoverage_bottom,
+        'bondprocessbondztouchheight_ecro', bondprocessbondztouchheight_ecro,
+       }
