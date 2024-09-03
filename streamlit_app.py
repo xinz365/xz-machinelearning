@@ -77,5 +77,4 @@ data = {'dispenserpressure_ecro', dispenserpressure_ecro,
         'pbiepoxycoverage_top', pbiepoxycoverage_top,
         'pbiepoxycoverage_right', pbiepoxycoverage_right,
         'pbiepoxycoverage_bottom', pbiepoxycoverage_bottom,
-        'bondprocessbondztouchheight_ecro', bondprocessbondztouchheight_ecro,
-       }
+        'bondprocessbondztouchheight_ecro', bondprocessbondztouchheight_ecro}
