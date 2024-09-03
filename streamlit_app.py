@@ -25,4 +25,4 @@ with st.sidebar:
   st.header('Input Features')
   dispenserpressure_ecro = st.number_input('Dispenser Pressure')
   st.write("The current Dispenser Pressure is ", dispenserpressure_ecro)
-  
+  bondtimenothighforcearray_ecro = st.slider('Bond Time Not High Force Array',50, 300, 150)
