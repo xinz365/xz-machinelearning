@@ -70,4 +70,5 @@ with st.sidebar:
   input_sample = pd.concat([input_df, X], axis=0)
 
 input_df
+
   
