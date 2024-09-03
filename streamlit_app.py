@@ -72,4 +72,16 @@ with st.sidebar:
 st.info('**User Input Summary**')
 input_df
 
-  
+import statsmodels.api as sm
+
+# Prepare X
+X = data[['dispenseprocessspeed_ecro','dispensewaittime_ecro','la_251920580_dispenserpressure_ecro','la_269353059_dvipostdispenseshapecheckdatainner','la_269353060_dvipostdispenseshapecheckdataouter','la_269353135_pbiepoxycoverage_left','la_269353135_pbiepoxycoverage_top','la_269353135_pbiepoxycoverage_right','la_269353135_pbiepoxycoverage_bottom','la_252313731_bondprocessbondztouchheight_ecro']].astype(float)
+# Add Constant
+X = sm.add_constant(X)
+# Prepare Y
+Y = data['blt'].astype(float)
+# Build OLS Model
+model = sm.OLS(Y, X)
+results = model.fit()
+# Ruselt
+print(results.summary())
