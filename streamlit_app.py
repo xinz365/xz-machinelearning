@@ -23,9 +23,9 @@ with st.expander('Data Visualization'):
 
 with st.sidebar:
   st.header('Input Features')
-  dispenserpressure_ecro = st.number_input('Dispenser Pressure', min_value=0, max_value=5, value=None, placeholder="Type a number...")
+  dispenserpressure_ecro = st.number_input('Dispenser Pressure', min_value=0.0, max_value=5.0, value=None, placeholder="Type a number...")
   st.write("The current Dispenser Pressure is ", dispenserpressure_ecro)
-  bondprocessbondztouchheight_ecro = st.number_input('Bond Z Touch Height', min_value=0, max_value=1000, value=None, placeholder="Type a number...")
+  bondprocessbondztouchheight_ecro = st.number_input('Bond Z Touch Height', min_value=0.0, max_value=1000.0, value=None, placeholder="Type a number...")
   st.write("The current Bond Z Touch Height is ", bondprocessbondztouchheight_ecro)
   dvipostdispenseshapecheckdatainner = st.number_input('Post Dispenser Shape Check Inner')
   st.write("The current Post Dispenser Shape Check Inner is ", dvipostdispenseshapecheckdatainner)
