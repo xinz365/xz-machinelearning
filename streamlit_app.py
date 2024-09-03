@@ -52,17 +52,22 @@ with st.sidebar:
   dispenseheighttostrip_ecro = st.selectbox('Dispense Height to Strip',('120','130','140'))
   st.write("The current Dispense Height to Strip is ", dispenseheighttostrip_ecro)
 
-data = {'dispenserpressure_ecro', dispenserpressure_ecro,
-        'bondtimenothighforcearray_ecro', bondtimenothighforcearray_ecro,
-        'dispensepatternclassselection_ecro', dispensepatternclassselection_ecro,
-        'dispenseprinttime_ecro', dispenseprinttime_ecro,
-        'dispenseprocessspeed_ecro', dispenseprocessspeed_ecro,
-        'dispensewaittime_ecro', dispensewaittime_ecro,
-        'dispenseheighttostrip_ecro', dispenseheighttostrip_ecro,
-        'dvipostdispenseshapecheckdatainner', dvipostdispenseshapecheckdatainner,
-        'dvipostdispenseshapecheckdataouter', dvipostdispenseshapecheckdataouter,
-        'pbiepoxycoverage_left', pbiepoxycoverage_left,
-        'pbiepoxycoverage_top', pbiepoxycoverage_top,
-        'pbiepoxycoverage_right', pbiepoxycoverage_right,
-        'pbiepoxycoverage_bottom', pbiepoxycoverage_bottom,
-        'bondprocessbondztouchheight_ecro', bondprocessbondztouchheight_ecro}
+  data = {'dispenserpressure_ecro': dispenserpressure_ecro,
+          'bondtimenothighforcearray_ecro': bondtimenothighforcearray_ecro,
+          'dispensepatternclassselection_ecro': dispensepatternclassselection_ecro,
+          'dispenseprinttime_ecro': dispenseprinttime_ecro,
+          'dispenseprocessspeed_ecro': dispenseprocessspeed_ecro,
+          'dispensewaittime_ecro': dispensewaittime_ecro,
+          'dispenseheighttostrip_ecro': dispenseheighttostrip_ecro,
+          'dvipostdispenseshapecheckdatainner': dvipostdispenseshapecheckdatainner,
+          'dvipostdispenseshapecheckdataouter': dvipostdispenseshapecheckdataouter,
+          'pbiepoxycoverage_left': pbiepoxycoverage_left,
+          'pbiepoxycoverage_top': pbiepoxycoverage_top,
+          'pbiepoxycoverage_right': pbiepoxycoverage_right,
+          'pbiepoxycoverage_bottom': pbiepoxycoverage_bottom,
+          'bondprocessbondztouchheight_ecro': bondprocessbondztouchheight_ecro}
+  input_df = pd.DataFrame(data, index=[0])
+  input_sample = pd.concat([input_df, X], axis=0)
+
+input_df
+  
