@@ -29,8 +29,9 @@ with st.sidebar:
   st.write("The current Bond Time Not High Force Array is ", bondtimenothighforcearray_ecro)
   dispensepatternclassselection_ecro = st.selectbox('Dispense Pattern Class Selection',('20','40'))
   st.write("The current Dispense Pattern Class Selection is ", dispensepatternclassselection_ecro)
-  #dispenseprinttime_ecro	dispenseprocessspeed_ecro	dispensewaittime_ecro	dispenserpressure_ecro	dispenseheighttostrip_ecro
-  dispenseprinttime_ecro = st.selectbox('Dispense Print Time',('30'))
+  dispenseprinttime_ecro = st.selectbox('Dispense Print Time','30')
   st.write("The current Dispense Print Time is ", dispenseprinttime_ecro)
   dispenseprocessspeed_ecro = st.selectbox('Dispense Process Speed',('0.7','0.75','0.8'))
   st.write("The current Dispense Process Speed is ", dispenseprocessspeed_ecro)
+  dispensewaittime_ecro
+  dispenseheighttostrip_ecro
