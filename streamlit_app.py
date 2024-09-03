@@ -82,6 +82,7 @@ X = sm.add_constant(X)
 Y = data['blt'].astype(float)
 # Build OLS Model
 model = sm.OLS(Y, X)
+
 results = model.fit()
 # Ruselt
 print(results.summary())
