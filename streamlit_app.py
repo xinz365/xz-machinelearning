@@ -18,5 +18,6 @@ with st.expander('BLT Data'):
   y = df.blt
   y
 
-
+with st.expander('Data Visualization'):
+  st.scatter_chart(data=df, x='', y='', color='')
   
