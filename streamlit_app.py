@@ -19,6 +19,6 @@ with st.expander('BLT Data'):
   y
   
 with st.expander('Data Visualization'):
-  st.scatter_chart(data=df, x='dispenserpressure', y='blt', color='dispensepattern')
+  st.scatter_chart(data=df, x='dispenserpressure_ecro', y='blt', color='dispensepatternclassselection_ecro')
   
   
