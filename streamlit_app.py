@@ -23,7 +23,7 @@ with st.expander('Data Visualization'):
 
 with st.sidebar:
   st.header('Input Features')
-  dispenserpressure_ecro = st.number_input('Dispenser Pressure')
+  dispenserpressure_ecro = st.number_input('Dispenser Pressure', min_value=0, max_value=100, placeholder="Type a number...")
   st.write("The current Dispenser Pressure is ", dispenserpressure_ecro)
   bondprocessbondztouchheight_ecro = st.number_input('Bond Z Touch Height')
   st.write("The current Bond Z Touch Height is ", bondprocessbondztouchheight_ecro)
