@@ -24,5 +24,3 @@ with st.expander('Data Visualization'):
 #Data Preparation
 with st.sidebar():
   st.header('Input Features')
-  dispenserpressure_ecro = st.number_input('Dispenser Pressure')
-  st.write("The current Dispenser Pressure is ", dispenserpressure_ecro)
