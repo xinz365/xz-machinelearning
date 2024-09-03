@@ -69,6 +69,7 @@ with st.sidebar:
   input_df = pd.DataFrame(data, index=[0])
   input_sample = pd.concat([input_df, X], axis=0)
 
+st.info('**User Input Summary**')
 input_df
 
   
