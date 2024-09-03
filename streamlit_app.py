@@ -26,3 +26,6 @@ with st.sidebar:
   dispenserpressure_ecro = st.number_input('Dispenser Pressure')
   st.write("The current Dispenser Pressure is ", dispenserpressure_ecro)
   bondtimenothighforcearray_ecro = st.slider('Bond Time Not High Force Array',50, 300, 150)
+  st.write("The current Bond Time Not High Force Array is ", bondtimenothighforcearray_ecro)
+  dispensepatternclassselection_ecro = st.select_box('Dispense Pattern Class Selection','20','40')
+  st.write("The current Dispense Pattern Class Selection is ", dispensepatternclassselection_ecro)
