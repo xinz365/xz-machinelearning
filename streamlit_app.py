@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-st.title('BLT Prediction App for PCU12')
+st.title('BLT Prediction App')
+st.subtitle('Designed for PCU12')
 
 st.info('This app builds a machine learning model!')
 
