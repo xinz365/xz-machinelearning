@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title('Die Bond BLT Prediction App')
-st.header("_Designed_ _for_ :blue[PCU12]" _Only_)
+st.header("_Designed_ _for_ :blue[PCU12] _Only_")
 
 st.info('This app builds a machine learning model!')
 
