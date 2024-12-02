@@ -50,4 +50,4 @@ st.info('**Please Confirm Your Input**')
 input_df
 
 st.info('**The BLT Model Prediction is**')
-"**y[0]**"
+y[0]
