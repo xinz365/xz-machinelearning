@@ -30,7 +30,7 @@ with st.sidebar:
   st.write("Date is ", date)
   lot_id = st.selectbox('Lot_ID', ('SUPD35DNV000','SUPD35DNW000','SUPD35DNZ000','SUPD35DQR000','SUPD35EM0000'))
   st.write("Lot_ID is ", lot_id)
-  strip_id = st.selectbox(Strip_ID, ('P131584725_0014','P131584725_0015','P131584725_0016','P131584725_0017','P131584725_0018'))
+  strip_id = st.selectbox('Strip_ID', ('P131584725_0014','P131584725_0015','P131584725_0016','P131584725_0017','P131584725_0018'))
   st.write("Strip_ID is ", strip_id)
   die_position_x = st.selectbox('X', ('1','2','3','4','5'))
   st.write("Die Position X is ", die_position_x)
